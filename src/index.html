@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .section {
+            display: none;
+        }
+
+        .section:target {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex flex-col">
+   
+    <nav class="bg-blue-500 py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold">Elex Shop</a>
+            <ul class="flex space-x-4">
+                <li><a href="#home" class="text-white">Home</a></li>
+                <li><a href="#category" class="text-white">Category</a></li>
+                <li><a href="#contact" class="text-white">Contact</a></li>
+                <li><a href="#product" class="text-white">Products</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   
+    <header id="home" class="py-20 bg-gradient-to-r from-blue-400 to-blue-600 text-center flex-1 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1625698311031-f0dd15be5144?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3R1c3N5fGVufDB8fDB8fHww'); background-size: cover; width: 100%; height: 400px;">
+        <div class="container mx-auto flex flex-col justify-center items-center h-full">
+            <h1 class="text-5xl text-white font-bold text-center">Welcome to My Stussy Shop</h1>
+            <p class="mt-4 text-lg text-white text-center">Where you'll find amazing things.</p>
+            <a href="#" class="inline-block mt-8 px-6 py-3 rounded-full bg-white text-blue-500 font-bold hover:bg-blue-500 hover:text-white transition duration-300">Shop Now</a>
+        </div>
+    </header>
+    
+    
+    
+    
+    
+    
+    
+
+   
+    <section id="category" class="section py-20 flex-1">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Category</h2>
+            <div class="flex justify-around items-center flex-wrap">
+                <div class="w-full md:w-1/2 lg:w-1/5 p-4">
+                    <img src="https://images.unsplash.com/photo-1608319294852-d87737e8e46c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHN0dXNzeXxlbnwwfHwwfHx8MA%3D%3D" alt="Product 1" class="w-full h-auto mb-4 object-cover">
+                    <p class="text-sm font-bold">Stussy Shoes</p>
+                    <p><span class="font-normal">AF1 STUSSY shoes for men and women..</span></p>
+                    <p class="text-sm font-bold">Price: $50</p>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/5 p-4">
+                    <img src="https://images.unsplash.com/photo-1677467372275-4cc5e00fd5d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dCUyMHNoaXJ0JTIwc3R1c3N5fGVufDB8fDB8fHww" alt="Product 2" class="w-full h-auto mb-4 object-cover">
+                    <p class="text-sm font-bold">Sweetshirt</p>
+                    <p><span class="font-normal">Get the best deal for Stussy Sweatshirt, Sweatshirts for Men.</span></p>
+                    <p class="text-sm font-bold">Price: $40</p>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/5 p-4">
+                    <img src="https://images.unsplash.com/photo-1625697674238-a25bf60b657b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHN0dXNzeXxlbnwwfHwwfHx8MA%3D%3D" alt="Product 3" class="w-full h-auto mb-4 object-cover">
+                    <p class="text-sm font-bold">Stussy sneaker</p>
+                    <p><span class="font-normal">Stüssy's 2022 version is done in two distinct colorways.</span></p>
+                    <p class="text-sm font-bold">Price: $50</p>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/5 p-4">
+                    <img src="https://images.unsplash.com/photo-1677467569514-f5b9ed44fdc8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHN0dXNzeXxlbnwwfHwwfHx8MA%3D%3D" alt="Product 4" class="w-full h-auto mb-4 object-cover">
+                    <p class="text-sm font-bold">Stussy T-shirt</p>
+                    <p><span class="font-normal">Stussy Basic Stussy T-Shirt White - Freshcotton</span></p>
+                    <p class="text-sm font-bold">Price: $20</p>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/5 p-4">
+                    <img src="https://images.unsplash.com/photo-1554201502-1c99ebd0c836?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHN0dXNzeXxlbnwwfHwwfHx8MA%3D%3D" alt="Product 5" class="w-full h-auto mb-4 object-cover">
+                    <p class="text-sm font-bold">Jacket</p>
+                    <p><span class="font-normal">Jackets are outerwear designed for layering..</span></p>
+                    <p class="text-sm font-bold">Price: $20</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    
+    <section id="contact" class="section py-20 flex-1">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
+            <div class="max-w-xl mx-auto bg-white rounded-lg shadow-md px-10 py-8">
+                <form action="/submit-contact-form" method="post">
+                    <div class="mb-8">
+                        <div class="flex flex-wrap -mx-4 mb-6">
+                            <div class="w-full md:w-1/2 px-4 mb-6 md:mb-0">
+                                <div class="flex">
+                                    <div class="w-full pr-2">
+                                        <label for="name" class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Your Name(required)</label>
+                                        <input type="text" id="name" name="name" class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white">
+                                    </div>
+                                    <div class="w-full pl-2">
+                                        <label for="email" class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Your Email(required)</label>
+                                        <input type="email" id="email" name="email" class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full px-4">
+                            <label for="subject" class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white">
+                        </div>
+                    </div>
+                    <div class="mb-8">
+                        <label for="message" class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Message</label>
+                        <textarea id="message" name="message" class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white h-32"></textarea>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+   
+    <section id="product" class="section py-20 flex-1">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">On Selling Product</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+               
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D" alt="Product 1">
+                    <h3 class="text-xl font-semibold">Stussy</h3>
+                    <p>available</p>
+                    <p class="font-bold">$20</p>
+                </div>
+                
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D" alt="Product 2">
+                    <h3 class="text-xl font-semibold">Stussy</h3>
+                    <p>available</p>
+                    <p class="font-bold">$20</p>
+                </div>
+                
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D" alt="Product 3">
+                    <h3 class="text-xl font-semibold">Stussy</h3>
+                    <p>available</p>
+                    <p class="font-bold">$20</p>
+                </div>
+                
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D" alt="Product 4">
+                    <h3 class="text-xl font-semibold">stussy</h3>
+                    <p>available</p>
+                    <p class="font-bold">$20</p>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D" alt="Product 5">
+                    <h3 class="text-xl font-semibold">Stussy</h3>
+                    <p>available</p>
+                    <p class="font-bold">$20</p>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D" alt="Product 5">
+                    <h3 class="text-xl font-semibold">Stussy</h3>
+                    <p>available</p>
+                    <p class="font-bold">$20</p>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D" alt="Product 5">
+                    <h3 class="text-xl font-semibold">Stussy</h3>
+                    <p>available</p>
+                    <p class="font-bold">$20</p>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D" alt="Product 5">
+                    <h3 class="text-xl font-semibold">Stussy</h3>
+                    <p>available</p>
+                    <p class="font-bold">$20</p>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D" alt="Product 5">
+                    <h3 class="text-xl font-semibold">Stussy</h3>
+                    <p>available</p>
+                    <p class="font-bold">$20</p>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D" alt="Product 5">
+                    <h3 class="text-xl font-semibold">Stussy</h3>
+                    <p>available</p>
+                    <p class="font-bold">$20</p>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D" alt="Product 5">
+                    <h3 class="text-xl font-semibold">Stussy</h3>
+                    <p>available</p>
+                    <p class="font-bold">$20</p>
+                </div>
+                <div class="product">
+                    <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D" alt="Product 5">
+                    <h3 class="text-xl font-semibold">Stussy</h3>
+                    <p>available</p>
+                    <p class="font-bold">$20</p>
+                </div>
+                                                                                                
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
